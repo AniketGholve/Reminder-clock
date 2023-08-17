@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Manrope:wght@800&display=swap');
+body {
+    background-color: #3D087B;
+}
+.mainBody{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    padding-left: 2%;
+    margin-top: 2%;
+}
+.timeBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.timeBox1 {
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    width: 500px;
+    padding: 0 4%;
+    height: 130px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+.timeBox2 {
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    width: 450px;
+    height: 130px;
+    opacity: 0.71;
+    position: absolute;
+    top: 8%;
+}
+
+.timeBox3 {
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    width: 350px;
+    height: 130px;
+    opacity: 0.22;
+    position: absolute;
+    top: 15%;
+}
+#abvt{
+    font-size: 30px;
+}
+.dateVal1{
+    display: grid;
+    place-content: center;
+    color: #FFFFFF;
+    background: url("./images/AM_svg.svg");
+    width: 82px;
+    height: 90px;
+}
+.colon{
+    font-size: 30px;
+    font-family: 'Manrope', sans-serif;
+    color: #8A11BF;
+}
+.dateVal{
+    display: grid;
+    place-content: center;
+    background: url("./images/timeline.svg");
+    width: 82px;
+    height: 90px;
+    color: #8A11BF;
+}
+.dateVal p{
+    margin: 0%;
+}
+.timeDiv{
+    display: grid;
+    font-size: 1.2rem;
+    text-align: center;
+    place-content: center;
+}
+.infoSection{
+    margin-top: 8%;
+    display: grid;
+    place-content: center;
+}
+#foodMessage {
+    width: 100%;
+    height: 100px;
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    color: #8E53F0;
+    font-family: 'Baumans', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.setAlarmBtn {
+    width: 299px;
+    height: 50px;
+    border-radius: 4px;
+    background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
+    font-size: 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.setAlarm {
+    display: grid;
+    grid-template-columns: repeat(2,47%);
+}
+#message {
+    width: 80%;
+    height: 70px;
+    background-color: rgb(255,255,255,0.23);
+    border: 1px solid rgb(237, 237, 237,0.23);
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Baumans', cursive;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 2%;
+    padding-left: 3%;
+}
+#timeSelectBox{
+    width: 50%;
+    color: #3D087BDE;
+    font-size: 17px;
+}
+.timeSetterBox {
+    width: 82%;
+    height: 400px;
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    flex-direction: column;
+}
+.timeSetterDiv{
+    display: flex;
+    justify-content: space-around;
+    color: #3D087BDE;
+    font-size: 17px;
+}
+
+.imagesMorning {
+    margin-top: 5%;
+    background: url("./images/Component 30 – 1.png");
+    width: 100%;
+    height: 720px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.timeFont {
+    font-size: 20px;
+    color: #3D087B;
+}
+.alarmTimeBox {
+    width: 70%;
+    height: 117px;
+    background: rgb(255, 255, 255,0.23);
+    border-radius: 10px;
+    border: 1px solid rgb(237, 237, 237,0.23);
+    line-height: 10px;
+    padding: 10px;
+    color: #F25CFE;
+    font-weight: bold;
+    font-family: 'Manrope', sans-serif;
+}
+@media screen and (min-width:1101px) and (max-width:1400px){
+    .setAlarm{
+        grid-template-columns: repeat(1,auto);
+        gap: 10px;
+    }
+    .alarmTimeBox{
+        width: 80%;
+        display: grid;
+        line-height: 0%;
+        justify-content: center;
+        align-items: center;
+    }
+    .setAlarmBtn{
+        width: 83%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .mainBody{
+        grid-template-columns: repeat(1,100%);
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 2%;
+        gap: 10px;
+    }
+    .timeSetterBox{
+        margin: 0%;
+        width: 98%;
+    }
+    #message{
+        width: 100%;
+        font-size: 25px;
+    }
+    .setAlarmBtn{
+        width: 101%;
+    }
+    .setAlarm{
+        grid-template-columns: repeat(1,auto);
+        gap: 10px;
+    }
+    .timeBox{
+        align-items: center;
+    }
+    .timeBox1{
+        width: 95%;
+         gap: 3px;
+    }
+    .timeBox2{
+        width: 90%;
+    }
+    .timeBox3{
+        width: 70%;
+    }
+    .dateVal1{
+        width: 50px;
+        height: 60px;
+    }
+    .dateVal{
+        width: 50px;
+        height: 60px;
+    }
+    .firstSection{
+        display: grid;
+        place-content: center;
+        width: 100%;
+    }
+    .alarmTimeBox{
+        width: 95%;
+    }
+    #foodMessage{
+        font-size: 20px;
+    }
+    .timeSetterDiv{
+        gap: 3px;
+    }
+}
+
+@media screen  and (max-width:1000px) and (min-width:500px){
+    .mainBody{
+        grid-template-columns: repeat(1,100%);
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 2%;
+        gap: 10px;
+    }
+    .timeSetterBox{
+        margin: 0%;
+        width: 98%;
+    }
+    #message{
+        width: 96.5%;
+        font-size: 25px;
+    }
+    .setAlarmBtn{
+        width: 100%;
+    }
+    .setAlarm{
+        grid-template-columns: repeat(1,auto);
+        gap: 10px;
+    }
+    .timeBox{
+        align-items: center;
+    }
+    .timeBox1{
+        width: 95%;
+         gap: 3px;
+    }
+    .timeBox2{
+        width: 90%;
+    }
+    .timeBox3{
+        width: 70%;
+    }
+    .dateVal1{
+        width: 50px;
+        height: 60px;
+    }
+    .dateVal{
+        width: 50px;
+        height: 60px;
+    }
+    .firstSection{
+        display: grid;
+        width: 100%;
+    }
+    .alarmTimeBox{
+        width: 97%;
+    }
+    #foodMessage{
+        font-size: 20px;
+    }
+    .timeSetterDiv{
+        gap: 3px;
+    }
+    .infoSection{
+        place-content: inherit;
+    }
+}
