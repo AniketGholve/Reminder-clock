@@ -92,7 +92,7 @@ body {
     place-content: center;
 }
 #foodMessage {
-    width: 100%;
+    width:590px;
     height: 100px;
     background-color: #FFFFFF;
     border: 1px solid #EDEDED;
@@ -156,7 +156,7 @@ body {
     font-size: 17px;
 }
 
-.imagesMorning {
+#imagesMorning {
     margin-top: 5%;
     background: url("./images/Component 30 – 1.png");
     width: 100%;
@@ -252,6 +252,7 @@ body {
         width: 95%;
     }
     #foodMessage{
+        width: 100%;
         font-size: 20px;
     }
     .timeSetterDiv{
@@ -311,6 +312,7 @@ body {
         width: 97%;
     }
     #foodMessage{
+        width: 100%;
         font-size: 20px;
     }
     .timeSetterDiv{
