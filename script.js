@@ -10,7 +10,7 @@ function setTime() {
     else if(hours>11 && hours<=16){
         document.getElementById("message").innerHTML = "GOOD AFTERNOON !! TAKE SOME SLEEP";
     }
-    else if(hours>=16 && hours<=20){
+    else if(hours>16 && hours<=20){
         document.getElementById("message").innerHTML = "GOOD EVENING !!";
     }
     else{
