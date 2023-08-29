@@ -54,11 +54,11 @@ document.getElementById('myButton').addEventListener('click', function (event) {
     }
     else if (parseInt(sessionStorage.getItem("lunchTime")) === hours) {
         document.getElementById("foodMessage").innerHTML = "LET'S HAVE SOME LUNCH";
-        document.getElementById("imagesMorning").style.backgroundImage = "url('./images/lunch_image.png')";
+        document.getElementById("imagesMorning").style.backgroundImage = "url('./images/Component 31 – 1.svg')";
     }
     else if (parseInt(sessionStorage.getItem("napTime")) === hours) {
         document.getElementById("foodMessage").innerHTML = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
-        document.getElementById("imagesMorning").style.backgroundImage = "url('./images/Component 31 – 1.svg')";
+        document.getElementById("imagesMorning").style.backgroundImage = "url('./images/lunch_image.png')";
     }
     else if (parseInt(sessionStorage.getItem("nightTime")) === hours) {
         document.getElementById("foodMessage").innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP";
