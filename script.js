@@ -1,5 +1,5 @@
 function setTime() {
-    let date = new Date(2023, 7, 29, 17, 0, 0);
+    let date = new Date();
     let hours = date.getHours();
     let abyt = "AM"
     document.getElementById("min").innerHTML = date.getMinutes();
@@ -34,7 +34,7 @@ function setTime() {
 
 document.getElementById('myButton').addEventListener('click', function (event) {
     event.preventDefault();
-    let date = new Date(2023, 7, 29, 17, 0, 0);
+    let date = new Date();
     let hours = date.getHours();
     sessionStorage.setItem("nightTime", event.target.form.night.value);
     sessionStorage.setItem("wakeUp", event.target.form.wake.value);
