@@ -50,19 +50,23 @@ document.getElementById('myButton').addEventListener('click', function (event) {
     document.getElementById("napTime").innerHTML = event.target.form.nap.options[selectedIndexNap].innerHTML;
     if (parseInt(sessionStorage.getItem("wakeUp")) === hours) {
         document.getElementById("foodMessage").innerHTML = "GRAB SOME HEALTHY BREAKFAST!!!";
-        document.getElementById("imagesMorning").style.backgroundImage = "url('./images/Component 30 – 1.png')";
+        document.getElementById("imagesMorning1").removeAttribute('src');
+        document.getElementById("imagesMorning1").setAttribute('src','./images/Component 30 – 1.png');
     }
     else if (parseInt(sessionStorage.getItem("lunchTime")) === hours) {
         document.getElementById("foodMessage").innerHTML = "LET'S HAVE SOME LUNCH";
-        document.getElementById("imagesMorning").style.backgroundImage = "url('./images/Component 31 – 1.svg')";
+        document.getElementById("imagesMorning1").removeAttribute('src');
+        document.getElementById("imagesMorning1").setAttribute('src','./images/Component 31 – 1.svg');
     }
     else if (parseInt(sessionStorage.getItem("napTime")) === hours) {
         document.getElementById("foodMessage").innerHTML = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
-        document.getElementById("imagesMorning").style.backgroundImage = "url('./images/lunch_image.png')"; 
+        document.getElementById("imagesMorning1").removeAttribute('src');
+        document.getElementById("imagesMorning1").setAttribute('src','./images/lunch_image.png');
     }
     else if (parseInt(sessionStorage.getItem("nightTime")) === hours) {
         document.getElementById("foodMessage").innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP";
-        document.getElementById("imagesMorning").style.backgroundImage = "url('./images/Component 32 – 1.svg')";
+        document.getElementById("imagesMorning1").removeAttribute('src');
+        document.getElementById("imagesMorning1").setAttribute('src','./images/Component 32 – 1.svg');
     }
 });
 let alarmSetBtn = document.querySelector(".setAlarmBtn");

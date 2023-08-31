@@ -5,8 +5,8 @@ body {
 }
 .mainBody{
     display: grid;
-    grid-template-columns: repeat(2,50%);
-    padding-left: 2%;
+    grid-template-columns: 60% 40%;
+    padding:0% 2%;
     margin-top: 2%;
 }
 .timeBox {
@@ -20,14 +20,14 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #EDEDED;
     border-radius: 10px;
-    width: 500px;
+    width: 92%;
     padding: 0 4%;
     height: 130px;
     position: relative;
     z-index: 1;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 3%;
     justify-content: center;
     font-family: 'Manrope', sans-serif;
 }
@@ -36,7 +36,7 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #EDEDED;
     border-radius: 10px;
-    width: 450px;
+    width: 75%;
     height: 130px;
     opacity: 0.71;
     position: absolute;
@@ -47,7 +47,7 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #EDEDED;
     border-radius: 10px;
-    width: 350px;
+    width: 65%;
     height: 130px;
     opacity: 0.22;
     position: absolute;
@@ -88,11 +88,12 @@ body {
 }
 .infoSection{
     margin-top: 8%;
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #foodMessage {
-    width:590px;
+    width:100%;
     height: 100px;
     background-color: #FFFFFF;
     border: 1px solid #EDEDED;
@@ -115,8 +116,9 @@ body {
     cursor: pointer;
 }
 .setAlarm {
-    display: grid;
-    grid-template-columns: repeat(2,47%);
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
 }
 #message {
     width: 80%;
@@ -158,12 +160,10 @@ body {
 
 #imagesMorning {
     margin-top: 5%;
-    background: url("./images/Component 30 – 1.png");
     width: 100%;
     height: 480px;
     background-repeat: no-repeat;
     background-size: contain;
-    
 }
 
 .timeFont {
@@ -171,7 +171,7 @@ body {
     color: #3D087B;
 }
 .alarmTimeBox {
-    width: 70%;
+    width: 40%;
     height: 117px;
     background: rgb(255, 255, 255,0.23);
     border-radius: 10px;
@@ -182,7 +182,7 @@ body {
     font-weight: bold;
     font-family: 'Manrope', sans-serif;
 }
-@media screen and (min-width:1101px) and (max-width:1400px){
+@media screen and (min-width:1000px) and (max-width:1400px){
     .setAlarm{
         grid-template-columns: repeat(1,auto);
         gap: 10px;
@@ -199,7 +199,7 @@ body {
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen  and (max-width:500px){
     .mainBody{
         grid-template-columns: repeat(1,100%);
         align-items: flex-start;
@@ -212,15 +212,16 @@ body {
         width: 98%;
     }
     #message{
-        width: 100%;
+        width: 96.5%;
         font-size: 25px;
     }
     .setAlarmBtn{
-        width: 101%;
+        width: 100%;
     }
     .setAlarm{
-        grid-template-columns: repeat(1,auto);
+        flex-direction: column;
         gap: 10px;
+        width: 100%;
     }
     .timeBox{
         align-items: center;
@@ -245,7 +246,6 @@ body {
     }
     .firstSection{
         display: grid;
-        place-content: center;
         width: 100%;
     }
     .alarmTimeBox{
@@ -258,9 +258,30 @@ body {
     .timeSetterDiv{
         gap: 3px;
     }
+    .infoSection{
+        place-content: inherit;
+    }
 }
 
-@media screen  and (max-width:1000px) and (min-width:500px){
+@media screen and (min-width:1101px) and (max-width:1400px){
+    .setAlarm{
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .alarmTimeBox{
+        width: 80%;
+        display: grid;
+        line-height: 0%;
+        justify-content: center;
+        align-items: center;
+    }
+    .setAlarmBtn{
+        width: 83%;
+    }
+}
+
+@media screen  and (min-width:500px) and (max-width:1000px){
     .mainBody{
         grid-template-columns: repeat(1,100%);
         align-items: flex-start;
@@ -280,8 +301,9 @@ body {
         width: 100%;
     }
     .setAlarm{
-        grid-template-columns: repeat(1,auto);
+        flex-direction: column;
         gap: 10px;
+        width: 100%;
     }
     .timeBox{
         align-items: center;
@@ -320,5 +342,8 @@ body {
     }
     .infoSection{
         place-content: inherit;
+    }
+    #imagesMorning{
+       height: 550px;
     }
 }
