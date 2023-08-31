@@ -5,7 +5,7 @@ body {
 }
 .mainBody{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 58% 42%;
     padding:0% 2%;
     margin-top: 2%;
 }
@@ -161,7 +161,6 @@ body {
 #imagesMorning {
     margin-top: 5%;
     width: 100%;
-    height: 480px;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -263,23 +262,6 @@ body {
     }
 }
 
-@media screen and (min-width:1101px) and (max-width:1400px){
-    .setAlarm{
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-    .alarmTimeBox{
-        width: 80%;
-        display: grid;
-        line-height: 0%;
-        justify-content: center;
-        align-items: center;
-    }
-    .setAlarmBtn{
-        width: 83%;
-    }
-}
 
 @media screen  and (min-width:500px) and (max-width:1000px){
     .mainBody{
@@ -342,8 +324,5 @@ body {
     }
     .infoSection{
         place-content: inherit;
-    }
-    #imagesMorning{
-       height: 550px;
     }
 }
